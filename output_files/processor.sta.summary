@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'SW[17]'
+Slack : -4.757
+TNS   : -81.864
+
+Type  : Slow Model Setup 'Clock'
+Slack : -4.259
+TNS   : -480.309
+
+Type  : Slow Model Setup 'proc:i9_9900k|Control[0]'
+Slack : -4.102
+TNS   : -59.611
+
+Type  : Slow Model Hold 'proc:i9_9900k|Control[0]'
+Slack : -3.379
+TNS   : -48.872
+
+Type  : Slow Model Hold 'Clock'
+Slack : -0.010
+TNS   : -0.017
+
+Type  : Slow Model Hold 'SW[17]'
+Slack : 1.287
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Clock'
+Slack : -1.380
+TNS   : -141.380
+
+Type  : Slow Model Minimum Pulse Width 'SW[17]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'proc:i9_9900k|Control[0]'
+Slack : -0.900
+TNS   : -63.720
+
+Type  : Fast Model Setup 'SW[17]'
+Slack : -1.938
+TNS   : -31.875
+
+Type  : Fast Model Setup 'proc:i9_9900k|Control[0]'
+Slack : -1.455
+TNS   : -20.791
+
+Type  : Fast Model Setup 'Clock'
+Slack : -1.361
+TNS   : -139.287
+
+Type  : Fast Model Hold 'proc:i9_9900k|Control[0]'
+Slack : -1.786
+TNS   : -26.515
+
+Type  : Fast Model Hold 'Clock'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'SW[17]'
+Slack : 1.113
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Clock'
+Slack : -1.380
+TNS   : -141.380
+
+Type  : Fast Model Minimum Pulse Width 'SW[17]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'proc:i9_9900k|Control[0]'
+Slack : -0.090
+TNS   : -6.300
+
+------------------------------------------------------------

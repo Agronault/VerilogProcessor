@@ -1,0 +1,184 @@
+m255
+K3
+z0
+13
+cModel Technology
+dC:\altera\13.0sp1
+T_opt
+!s110 1569795022
+VQcKiHPm[cOF>a=kk01R;73
+04 4 4 work proc fast 0
+=1-e0d55ef48eaa-5d912bce-163-1824
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vaddsub
+Z1 !s110 1569795009
+!i10b 1
+!s100 NCKmZC]z11:MRI=dhKTd21
+I?mBS=6nAVz:LjBnCmILhW3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/xande/Documents/GitHub/VerilogProcessor-master
+w1569595993
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
+L0 1
+Z4 OL;L;10.5;63
+r1
+!s85 0
+31
+Z5 !s108 1569795009.000000
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vdec3to8
+R1
+!i10b 1
+!s100 IWGo]4Z6cG1^P4D=XZMM?0
+IcBIWk;`DPW1b8W7ci6d@<0
+R2
+R3
+w1569596000
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/dec3to8.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/dec3to8.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/dec3to8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/dec3to8.v|
+!i113 0
+R6
+R0
+vIRn
+R1
+!i10b 1
+!s100 mgY2AQHk4aOiM[?EzW4Bl3
+IMcmL^9j[lUFO2^870P5?60
+R2
+R3
+w1569595911
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v|
+!i113 0
+R6
+R0
+n@i@rn
+vmux
+R1
+!i10b 1
+!s100 3eWc8ec;DV^=P9mQILOS52
+I1Djb^YTH:?KS0P92jA22B2
+R2
+R3
+w1569610615
+8C:\Users\xande\Documents\GitHub\VerilogProcessor-master\mux.v
+FC:\Users\xande\Documents\GitHub\VerilogProcessor-master\mux.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\xande\Documents\GitHub\VerilogProcessor-master\mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\xande\Documents\GitHub\VerilogProcessor-master\mux.v|
+!i113 0
+R6
+R0
+vproc
+R1
+!i10b 1
+!s100 @OP:6_eX`nM1X4n[ZY^<U3
+IQRnBi6PNhcD=fI6c3L5el0
+R2
+R3
+w1569795004
+8C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v
+FC:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v|
+!i113 0
+R6
+R0
+vprocessor
+R1
+!i10b 1
+!s100 ?Em=YG0m9Bi=?iJUP>7hM0
+ITgD]zmSD5QhJIJlD4Y^HZ0
+R2
+R3
+w1569611509
+8C:\Users\xande\Documents\GitHub\VerilogProcessor-master\processor.v
+FC:\Users\xande\Documents\GitHub\VerilogProcessor-master\processor.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\xande\Documents\GitHub\VerilogProcessor-master\processor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\xande\Documents\GitHub\VerilogProcessor-master\processor.v|
+!i113 0
+R6
+R0
+vregn
+R1
+!i10b 1
+!s100 D3>RHfo:o`XN>P2:g^3WM1
+Il7GSDoohZO]iziaFa^[g]2
+R2
+R3
+w1569595928
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v|
+!i113 0
+R6
+R0
+vupcount
+R1
+!i10b 1
+!s100 a0YR6giRMC5F<KedFzR9>2
+IC=o4D@chnie_n6?k`;RWN2
+R2
+R3
+w1569595975
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v|
+!i113 0
+R6
+R0

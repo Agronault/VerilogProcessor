@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Wed Sep 25 14:46:21 2019
+Fri Sep 27 16:17:27 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,30 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR0
+ 13. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR1
+ 14. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR2
+ 15. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR3
+ 16. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR4
+ 17. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR5
+ 18. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR6
+ 19. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR7
+ 20. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mG
+ 21. Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mA
+ 22. Parameter Settings for User Entity Instance: proc:i9_9900k|IRn:mIR
+ 23. Port Connectivity Checks: "proc:i9_9900k|dec3to8:decY"
+ 24. Port Connectivity Checks: "proc:i9_9900k|dec3to8:decX"
+ 25. Port Connectivity Checks: "proc:i9_9900k|IRn:mIR"
+ 26. Port Connectivity Checks: "proc:i9_9900k|addsub:ula"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +59,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Sep 25 14:46:21 2019               ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 27 16:17:26 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processor                                       ;
 ; Top-level Entity Name              ; processor                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 316                                             ;
+;     Total combinational functions  ; 194                                             ;
+;     Dedicated logic registers      ; 140                                             ;
+; Total registers                    ; 140                                             ;
+; Total pins                         ; 36                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -149,23 +172,326 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; proc.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/proc.v      ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/processor.v ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/mux.v       ;         ;
+; addsub.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/addsub.v    ;         ;
+; upcount.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/upcount.v   ;         ;
+; dec3to8.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/dec3to8.v   ;         ;
+; regn.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/regn.v      ;         ;
+; IRn.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/VerilogProcessor-master/IRn.v       ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 316   ;
+;                                             ;       ;
+; Total combinational functions               ; 194   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 124   ;
+;     -- 3 input functions                    ; 54    ;
+;     -- <=2 input functions                  ; 16    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 194   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 140   ;
+;     -- Dedicated logic registers            ; 140   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 36    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 140   ;
+; Total fan-out                               ; 1125  ;
+; Average fan-out                             ; 3.04  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |processor                 ; 194 (0)           ; 140 (0)      ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |processor                                ; work         ;
+;    |proc:i9_9900k|         ; 194 (42)          ; 140 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k                  ; work         ;
+;       |IRn:mIR|            ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|IRn:mIR          ; work         ;
+;       |mux:Multiplexers|   ; 150 (150)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|mux:Multiplexers ; work         ;
+;       |regn:mR0|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR0         ; work         ;
+;       |regn:mR1|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR1         ; work         ;
+;       |regn:mR2|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR2         ; work         ;
+;       |regn:mR3|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR3         ; work         ;
+;       |regn:mR4|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR4         ; work         ;
+;       |regn:mR5|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR5         ; work         ;
+;       |regn:mR6|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR6         ; work         ;
+;       |regn:mR7|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|regn:mR7         ; work         ;
+;       |upcount:Tstep|      ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|proc:i9_9900k|upcount:Tstep    ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                    ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                     ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
+; proc:i9_9900k|Done                                  ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[0]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[1]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[2]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[3]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[4]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[5]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[6]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[7]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[8]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[9]          ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[10]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[11]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[12]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[13]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[14]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|mux:Multiplexers|BusWires[15]         ; proc:i9_9900k|mux:Multiplexers|WideNor0 ; yes                    ;
+; proc:i9_9900k|Control[0]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[3]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[4]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[5]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[6]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[7]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[8]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[9]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Control[2]                            ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|IRin                                  ; proc:i9_9900k|IRin                      ; yes                    ;
+; proc:i9_9900k|Rin[0]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[1]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[2]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[3]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[4]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[5]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[6]                                ; SW[17]                                  ; yes                    ;
+; proc:i9_9900k|Rin[7]                                ; SW[17]                                  ; yes                    ;
+; Number of user-specified and inferred latches = 35  ;                                         ;                        ;
++-----------------------------------------------------+-----------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; proc:i9_9900k|regn:mA|Q[0..15]         ; Stuck at GND due to stuck port clock_enable ;
+; proc:i9_9900k|regn:mG|Q[1]             ; Stuck at GND due to stuck port clock_enable ;
+; proc:i9_9900k|regn:mG|Q[0,2..15]       ; Lost fanout                                 ;
+; Total Number of Removed Registers = 32 ;                                             ;
++----------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 140   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 138   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |processor|proc:i9_9900k|Control                    ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; No         ; |processor|proc:i9_9900k|Mux8                       ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |processor|proc:i9_9900k|mux:Multiplexers|Selector1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR0 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR2 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR4 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR5 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR6 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mR7 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mG ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 16    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|regn:mA ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 16    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:i9_9900k|IRn:mIR ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 10    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "proc:i9_9900k|dec3to8:decY" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; En   ; Input ; Info     ; Stuck at VCC                 ;
++------+-------+----------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:i9_9900k|dec3to8:decX"                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; En   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:i9_9900k|IRn:mIR"                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; R    ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (10 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:i9_9900k|addsub:ula"                                                                                                                                                           ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                           ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control ; Input ; Warning  ; Input port expression (10 bits) is wider than the input port (1 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Sep 25 14:46:21 2019
+    Info: Processing started: Fri Sep 27 16:17:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Error (10170): Verilog HDL syntax error at processor.v(27) near text ".";  expecting an operand File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 27
-Error (10170): Verilog HDL syntax error at processor.v(28) near text ")";  expecting ";" File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 28
-Error (10170): Verilog HDL syntax error at processor.v(34) near text ".";  expecting "end" File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 34
-Error (10170): Verilog HDL syntax error at processor.v(43) near text "endcase";  expecting an operand File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 43
-Error (10170): Verilog HDL syntax error at processor.v(47) near text "endcase";  expecting an operand File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 47
-Error (10170): Verilog HDL syntax error at processor.v(51) near text "endcase";  expecting an operand File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 51
-Error (10170): Verilog HDL syntax error at processor.v(54) near text ")";  expecting ":", or "," File: C:/Users/Aluno/Desktop/VerilogProcessor/processor.v Line: 54
-Info (12021): Found 0 design units, including 0 entities, in source file processor.v
+Info (12021): Found 1 design units, including 1 entities, in source file proc.v
+    Info (12023): Found entity 1: proc
+Info (12021): Found 1 design units, including 1 entities, in source file processor.v
+    Info (12023): Found entity 1: processor
 Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus II megafunction library
 Info (12021): Found 1 design units, including 1 entities, in source file mux.v
     Info (12023): Found entity 1: mux
@@ -179,10 +505,125 @@ Info (12021): Found 1 design units, including 1 entities, in source file regn.v
     Info (12023): Found entity 1: regn
 Info (12021): Found 1 design units, including 1 entities, in source file irn.v
     Info (12023): Found entity 1: IRn
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 7 errors, 2 warnings
-    Error: Peak virtual memory: 4599 megabytes
-    Error: Processing ended: Wed Sep 25 14:46:22 2019
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (10236): Verilog HDL Implicit Net warning at proc.v(31): created implicit net for "Gin"
+Warning (10236): Verilog HDL Implicit Net warning at proc.v(32): created implicit net for "Ain"
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Info (12128): Elaborating entity "proc" for hierarchy "proc:i9_9900k"
+Warning (10235): Verilog HDL Always Construct warning at proc.v(46): variable "Run" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(63): variable "IR" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at proc.v(59): incomplete case statement has no default case item
+Warning (10235): Verilog HDL Always Construct warning at proc.v(81): variable "IR" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at proc.v(74): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(86): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at proc.v(44): inferring latch(es) for variable "Done", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at proc.v(44): inferring latch(es) for variable "Control", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at proc.v(44): inferring latch(es) for variable "Rin", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at proc.v(44): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "IRin" at proc.v(46)
+Info (10041): Inferred latch for "Rin[0]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[1]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[2]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[3]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[4]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[5]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[6]" at proc.v(46)
+Info (10041): Inferred latch for "Rin[7]" at proc.v(46)
+Info (10041): Inferred latch for "Control[0]" at proc.v(46)
+Info (10041): Inferred latch for "Control[1]" at proc.v(46)
+Info (10041): Inferred latch for "Control[2]" at proc.v(46)
+Info (10041): Inferred latch for "Control[3]" at proc.v(46)
+Info (10041): Inferred latch for "Control[4]" at proc.v(46)
+Info (10041): Inferred latch for "Control[5]" at proc.v(46)
+Info (10041): Inferred latch for "Control[6]" at proc.v(46)
+Info (10041): Inferred latch for "Control[7]" at proc.v(46)
+Info (10041): Inferred latch for "Control[8]" at proc.v(46)
+Info (10041): Inferred latch for "Control[9]" at proc.v(46)
+Info (10041): Inferred latch for "Done" at proc.v(46)
+Info (12128): Elaborating entity "addsub" for hierarchy "proc:i9_9900k|addsub:ula"
+Warning (10235): Verilog HDL Always Construct warning at addsub.v(9): variable "A" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at addsub.v(9): variable "Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at addsub.v(10): variable "A" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at addsub.v(10): variable "Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "regn" for hierarchy "proc:i9_9900k|regn:mR0"
+Info (12128): Elaborating entity "IRn" for hierarchy "proc:i9_9900k|IRn:mIR"
+Info (12128): Elaborating entity "mux" for hierarchy "proc:i9_9900k|mux:Multiplexers"
+Warning (10235): Verilog HDL Always Construct warning at mux.v(12): variable "DIN" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(13): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(14): variable "R7" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(15): variable "R6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(16): variable "R5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(17): variable "R4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(18): variable "R3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(19): variable "R2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(20): variable "R1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at mux.v(21): variable "R0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at mux.v(11): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at mux.v(11): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at mux.v(10): inferring latch(es) for variable "BusWires", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "BusWires[0]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[1]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[2]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[3]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[4]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[5]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[6]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[7]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[8]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[9]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[10]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[11]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[12]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[13]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[14]" at mux.v(10)
+Info (10041): Inferred latch for "BusWires[15]" at mux.v(10)
+Info (12128): Elaborating entity "upcount" for hierarchy "proc:i9_9900k|upcount:Tstep"
+Info (12128): Elaborating entity "dec3to8" for hierarchy "proc:i9_9900k|dec3to8:decX"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[8] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[9] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[10] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[11] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[12] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[13] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[14] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|mux:Multiplexers|BusWires[15] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|Control[0]
+Warning (13012): Latch proc:i9_9900k|IRin has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal proc:i9_9900k|upcount:Tstep|Q[0]
+Info (17049): 15 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 368 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 332 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 4623 megabytes
+    Info: Processing ended: Fri Sep 27 16:17:27 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
