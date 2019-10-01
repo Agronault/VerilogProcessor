@@ -5,10 +5,10 @@ z0
 cModel Technology
 Z0 dC:\altera\13.0sp1
 T_opt
-!s110 1569936680
-VEzHm9PPb>1LS``Y3gk=R83
+!s110 1569953605
+VcZWfcez4h0RXBLMzL@3ZK0
 04 4 4 work proc fast 0
-=1-e0d55ef48eaa-5d935528-21b-ab8
+=1-e0d55ef48eaa-5d939745-223-2314
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
@@ -30,15 +30,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 d9iUS4`oZ20^ZbklMd9fF2
-IS8UbU6MN^dPlbY;VebNA=2
+!s100 iZi<CN5okOFBT9fCPQozV3
+I6?[0>;G^<A:YM5En7U=1Q3
 Z5 dC:/Users/xande/Documents/GitHub/VerilogProcessor-master
-w1569935375
+w1569947442
 8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
 FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
 L0 1
 Z6 OL;L;10.5;63
-Z7 !s108 1569939486.000000
+Z7 !s108 1569954296.000000
 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v|
 !i113 0
@@ -78,7 +78,7 @@ w1569595911
 FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v
 L0 1
 R6
-R7
+Z9 !s108 1569954297.000000
 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v|
 !i113 0
@@ -91,15 +91,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 3eWc8ec;DV^=P9mQILOS52
-IPS_4IQ[I?9VzC]Z3^<c203
+!s100 j^ijaidEIKEQ60FG1V?4m0
+I4G=RaWVDoT`aJn3fIim9P2
 R5
-w1569610615
+w1569954292
 8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/mux.v
 FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/mux.v
 L0 1
 R6
-R7
+R9
 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/mux.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/mux.v|
 !i113 0
@@ -112,21 +112,21 @@ r1
 31
 !i10b 1
 !s100 [b6>P0h4G8D?fE?P`gE[k3
-I:MiIjOU?ciBmPM;Ag83K^2
+I@NZD@S><VQ2Fh2=9M`c4V0
 R5
 w1569939449
-8C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v
-FC:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v
+8C:/Users/xande/Documents/GitHub/VerilogProcessor-master/proc.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/proc.v
 L0 1
 R6
-R7
-!s107 C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\xande\Documents\GitHub\VerilogProcessor-master\proc.v|
+R9
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/proc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/proc.v|
 !i113 0
 R8
 R2
 vprocessor
-!s110 1569939486
+!s110 1569954297
 !i10b 1
 !s100 ?Em=YG0m9Bi=?iJUP>7hM0
 IlJ[V@=R3@ajXmO3Kc<>hC1
@@ -140,7 +140,7 @@ R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/processor.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/processor.v|
 !i113 0
@@ -160,7 +160,7 @@ w1569595928
 FC:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v
 L0 1
 R6
-R7
+R9
 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v|
 !i113 0

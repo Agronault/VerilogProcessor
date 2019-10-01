@@ -6,7 +6,7 @@ module mux(Control, DIN, R0, R1, R2, R3, R4, R5, R6, R7 , G, BusWires);
 
 	input [9:0]Control; //0-7> R-out, 8> G-out, 9> DIN-out 
 
-	always @ Control
+	always @ (Control or DIN)
 	begin
 		case (Control)
 		10'b0000000001: BusWires <= DIN;

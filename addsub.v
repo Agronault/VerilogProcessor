@@ -6,15 +6,15 @@ module addsub(Control, A, Bus, G);
 	always @ (*)
 	begin
 		case (Control)
-			2'b00 : G <= A + Bus; 
-			2'b01 : G <= A - Bus;
-			2'b10 : G <= A & Bus;
+			2'b00 : G[15:0] <= (A[15:0] + Bus[15:0]); 
+			2'b01 : G <= (A[15:0] - Bus[15:0]);
+			2'b10 : G <= (A[15:0] & Bus[15:0]);
 			2'b11 : 
 			begin
-			if(A<Bus)
-				G <= 16'b1;
+			if(A[15:0]<Bus[15:0])
+				G[15:0] <= 16'b1111111111111111;
 			else
-				G <= 16'b0;
+				G[15:0] <= 16'b0000000000000000;
 			end
 		endcase
 	end
