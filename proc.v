@@ -5,7 +5,7 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 	output wire [15:0] BusWires;
 	wire [9:0] IR;
 	reg IRin;
-	reg ControlULA;
+	reg [1:0]ControlULA;
 	wire [3:0] I;
 	wire [7:0] Xreg, Yreg;
 	wire [1:0] Tstep_Q;
@@ -22,14 +22,14 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 	
 	addsub ula(ControlULA, A, BusWires, G);
 
-	regn mR0(BusWires, Rin[0], Clock, R0);
-	regn mR1(BusWires, Rin[1], Clock, R1);
-	regn mR2(BusWires, Rin[2], Clock, R2);
-	regn mR3(BusWires, Rin[3], Clock, R3);
-	regn mR4(BusWires, Rin[4], Clock, R4);
-	regn mR5(BusWires, Rin[5], Clock, R5);
-	regn mR6(BusWires, Rin[6], Clock, R6);
-	regn mR7(BusWires, Rin[7], Clock, R7);
+	regn mR0(BusWires, Rin[7], Clock, R0);
+	regn mR1(BusWires, Rin[6], Clock, R1);
+	regn mR2(BusWires, Rin[5], Clock, R2);
+	regn mR3(BusWires, Rin[4], Clock, R3);
+	regn mR4(BusWires, Rin[3], Clock, R4);
+	regn mR5(BusWires, Rin[2], Clock, R5);
+	regn mR6(BusWires, Rin[1], Clock, R6);
+	regn mR7(BusWires, Rin[0], Clock, R7);
 	regn mG(G, Gin, Clock, Gout);
 	regn mA(BusWires, Ain, Clock, A);
 
@@ -64,18 +64,36 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 						4'b0000: //mv
 						begin
 							Control = {Yreg, 2'b00}; //mux libera o valor em Y
-							Rin[IR[6:4]] = 1'b1; //X ativa a escrita
+							Rin = Xreg; //X ativa a escrita
 							Done = 1'b1; //finalizado
 						end
 						4'b0001: //mvi
 						begin
-							Control= {8'b0, 2'b01}; //mux libera a próxima entrada
+							Control= {8'b0, 2'b01}; //mux libera a proxima entrada
 							IRin= 1'b0;	//o próximo valor não é uma instrução
 						end
 						4'b0010: //add
 						begin
 							Control = {Xreg, 2'b00}; //salva X no registrador A
-							ControlULA = 1'b0; //ula fará soma
+							ControlULA = 2'b00; //ula vai fazer soma
+							Ain = 1'b1; //registrador A ativa escrita
+						end
+						4'b0011: //sub
+						begin
+							Control = {Xreg, 2'b00}; //salva X no registrador A
+							ControlULA = 2'b01; //ula vai fazer subtracao
+							Ain = 1'b1; //registrador A ativa escrita
+						end
+						4'b0100: //and
+						begin
+							Control = {Xreg, 2'b00}; //salva X no registrador A
+							ControlULA = 2'b10; //ula vai fazer and bit a bit
+							Ain = 1'b1; //registrador A ativa escrita
+						end
+						4'b0101: //slt
+						begin
+							Control = {Xreg, 2'b00}; //salva X no registrador A
+							ControlULA = 2'b11; //ula vai comparar X<Y
 							Ain = 1'b1; //registrador A ativa escrita
 						end
 					endcase
@@ -88,13 +106,28 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 					end
 					4'b0001: //mvi
 					begin
-						Rin[IR[6:4]]= 1'b1; //X ativa a escrita
+						Rin = Xreg; //X ativa a escrita
 						Done = 1'b1; //finalizado
 					end
 					4'b0010: //add
 					begin
 						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
-						Gin = 1'b1; //resultado da ULA é salvo
+						Gin = 1'b1; //resultado da vai ser salvo
+					end
+					4'b0011: //sub
+					begin
+						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
+						Gin = 1'b1; //resultado da ULA vai ser salvo
+					end
+					4'b0100: //and
+					begin
+						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
+						Gin = 1'b1; //resultado da ULA vai ser salvo
+					end
+					4'b0101: //slt
+					begin
+						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
+						Gin = 1'b1; //resultado da ULA vai ser salvo
 					end
 				endcase
 				2'b11: //define signals in time step 3
@@ -102,7 +135,25 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 					4'b0010: //add
 					begin
 						Control = 10'b0000000010; //mux libera G
-						Rin[IR[6:4]] = 1'b1; //ativa escrita em X
+						Rin = Xreg; //ativa escrita em X
+						Done= 1'b1;
+					end
+					4'b0011: //sub
+					begin
+						Control = 10'b0000000010; //mux libera G
+						Rin = Xreg;  //ativa escrita em X
+						Done= 1'b1;
+					end
+					4'b0100: //and
+					begin
+						Control = 10'b0000000010; //mux libera G
+						Rin = Xreg;  //ativa escrita em X
+						Done= 1'b1;
+					end
+					4'b0101: //slt
+					begin
+						Control = 10'b0000000010; //mux libera G
+						Rin = Xreg;  //ativa escrita em X
 						Done= 1'b1;
 					end
 				endcase
