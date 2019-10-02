@@ -5,7 +5,7 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 	output wire [15:0] BusWires;
 	wire [9:0] IR;
 	reg IRin;
-	reg [1:0]ControlULA;
+	reg [2:0]ControlULA;
 	wire [3:0] I;
 	wire [7:0] Xreg, Yreg;
 	wire [1:0] Tstep_Q;
@@ -75,25 +75,37 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 						4'b0010: //add
 						begin
 							Control = {Xreg, 2'b00}; //salva X no registrador A
-							ControlULA = 2'b00; //ula vai fazer soma
+							ControlULA = 3'b000; //ula vai fazer soma
 							Ain = 1'b1; //registrador A ativa escrita
 						end
 						4'b0011: //sub
 						begin
 							Control = {Xreg, 2'b00}; //salva X no registrador A
-							ControlULA = 2'b01; //ula vai fazer subtracao
+							ControlULA = 3'b001; //ula vai fazer subtracao
 							Ain = 1'b1; //registrador A ativa escrita
 						end
 						4'b0100: //and
 						begin
 							Control = {Xreg, 2'b00}; //salva X no registrador A
-							ControlULA = 2'b10; //ula vai fazer and bit a bit
+							ControlULA = 3'b010; //ula vai fazer and bit a bit
 							Ain = 1'b1; //registrador A ativa escrita
 						end
 						4'b0101: //slt
 						begin
 							Control = {Xreg, 2'b00}; //salva X no registrador A
-							ControlULA = 2'b11; //ula vai comparar X<Y
+							ControlULA = 3'b011; //ula vai comparar X<Y
+							Ain = 1'b1; //registrador A ativa escrita
+						end
+						4'b0110: //sll
+						begin
+							Control = {Xreg, 2'b00}; //salva X no registrador A
+							ControlULA = 3'b100; //ula vai dar shift X<<Y
+							Ain = 1'b1; //registrador A ativa escrita
+						end
+						4'b0111: //srl
+						begin
+							Control = {Xreg, 2'b00}; //salva X no registrador A
+							ControlULA = 3'b101; //ula vai dar shift X>>Y
 							Ain = 1'b1; //registrador A ativa escrita
 						end
 					endcase
@@ -129,6 +141,16 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
 						Gin = 1'b1; //resultado da ULA vai ser salvo
 					end
+					4'b0110: //sll
+					begin
+						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
+						Gin = 1'b1; //resultado da ULA vai ser salvo
+					end
+					4'b0111: //srl
+					begin
+						Control = {Yreg, 2'b00}; //mux libera Y para a ULA
+						Gin = 1'b1; //resultado da ULA vai ser salvo
+					end
 				endcase
 				2'b11: //define signals in time step 3
 				case (I)
@@ -151,6 +173,18 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 						Done= 1'b1;
 					end
 					4'b0101: //slt
+					begin
+						Control = 10'b0000000010; //mux libera G
+						Rin = Xreg;  //ativa escrita em X
+						Done= 1'b1;
+					end
+					4'b0110: //sll
+					begin
+						Control = 10'b0000000010; //mux libera G
+						Rin = Xreg;  //ativa escrita em X
+						Done= 1'b1;
+					end
+					4'b0111: //srl
 					begin
 						Control = 10'b0000000010; //mux libera G
 						Rin = Xreg;  //ativa escrita em X
