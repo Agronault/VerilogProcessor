@@ -5,6 +5,11 @@ module regn(R, Rin, Clock, Q);
 	output [n-1:0] Q;
 	reg [n-1:0] Q;
 	
+	initial
+	begin
+		Q <= 16'b0000000000000000;
+	end
+	
 	always @(posedge Clock)
 		if (Rin)
 			Q <= R;

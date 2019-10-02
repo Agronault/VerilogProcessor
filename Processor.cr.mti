@@ -1,12 +1,26 @@
-C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module IRn
+C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/dec3to8.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/dec3to8.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dec3to8
 
 Top level modules:
-	IRn
+	dec3to8
 
-} {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+} {} {}} C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/addsub.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/addsub.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module addsub
+
+Top level modules:
+	addsub
+
+} {} {}} C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/regn.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/regn.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regn
+
+Top level modules:
+	regn
+
+} {} {}} C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/upcount.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/upcount.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module upcount
 
 Top level modules:
@@ -26,12 +40,26 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	mux
 
-} {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module addsub
+} {} {}} C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/processor.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/processor.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module processor
 
 Top level modules:
-	addsub
+	processor
+
+} {} {}} C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/IRn.v {1 {vlog -work work C:/Users/Aluno/Desktop/ThiagoAlexandre/VerilogProcessor/IRn.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IRn
+
+Top level modules:
+	IRn
+
+} {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/upcount.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module upcount
+
+Top level modules:
+	upcount
 
 } {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/processor.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/processor.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -39,6 +67,20 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	processor
+
+} {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/IRn.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module IRn
+
+Top level modules:
+	IRn
+
+} {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/addsub.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module addsub
+
+Top level modules:
+	addsub
 
 } {} {}} C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v {1 {vlog -work work -vopt -stats=none C:/Users/xande/Documents/GitHub/VerilogProcessor-master/regn.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016

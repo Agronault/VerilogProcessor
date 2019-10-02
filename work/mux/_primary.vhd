@@ -2,7 +2,8 @@ library verilog;
 use verilog.vl_types.all;
 entity mux is
     port(
-        Control         : in     vl_logic_vector(9 downto 0);
+        Control         : in     vl_logic_vector(10 downto 0);
+        MEM             : in     vl_logic_vector(15 downto 0);
         DIN             : in     vl_logic_vector(15 downto 0);
         R0              : in     vl_logic_vector(15 downto 0);
         R1              : in     vl_logic_vector(15 downto 0);
