@@ -4,7 +4,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, save);
 	input Resetn, Clock, Run;
 	output reg Done, save;
 	output wire [15:0] BusWires;
-	output reg [15:0] addr;
+	output [15:0] addr;
 	wire [9:0] IR;
 	reg IRin;
 	reg [2:0]ControlULA;
@@ -38,7 +38,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, save);
 
 	IRn mIR(DIN[9:0], IRin, Clock, IR); // Each instruction can be encoded and stored in the IR
 
-	mux Multiplexers(Control, DIN, R0, R1, R2, R3, R4, R5, R6, R7 , Gout, BusWires);
+	mux Multiplexers(Control, mem, DIN, R0, R1, R2, R3, R4, R5, R6, R7 , Gout, BusWires);
 
 	wire Clear = ~Resetn | Done;
 	upcount Tstep (Clear, Clock, Tstep_Q);
