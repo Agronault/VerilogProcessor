@@ -13,7 +13,7 @@ module processor(SW, Clock, Done, BusWires, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7);
         initial
 	begin
 	  save = 1'b0;
-		mem[3] = 16'b0000000000000100;
+		mem[3] = 16'b0000000000000100; 
 		addr = 16'b0000000000000000;
 		memData = 16'b0000000000000000;
 	end

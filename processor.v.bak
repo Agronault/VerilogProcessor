@@ -28,6 +28,13 @@ module processor(SW, Clock, Done, BusWires, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7);
 		  mem[addr] = BusWires;
 	end
 	
-	
+	hexto7segment inst(SW[3:0], HEX0);
+
+	hexto7segment regX({1'b0, SW[6:4]}, HEX1);
+	hexto7segment regY({1'b0, SW[9:7]}, HEX4);
+
+	//hexto7segment din1(SW[7:4], HEX5);
+	//hexto7segment din2(SW[14:11], HEX6);
+	//hexto7segment din3(SW[15], HEX7);
 
 endmodule
