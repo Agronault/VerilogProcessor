@@ -1,33 +1,5 @@
-C:/Users/Aluno/Desktop/VerilogProcessor-master/processor.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/processor.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module processor
-
-Top level modules:
-	processor
-
-} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/proc.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/proc.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module proc
-
-Top level modules:
-	proc
-
-} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/regn.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/regn.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module regn
-
-Top level modules:
-	regn
-
-} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/IRn.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/IRn.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module IRn
-
-Top level modules:
-	IRn
-
-} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/mux.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/mux.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+{C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/mux.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/mux.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module mux
 
 Top level modules:
@@ -40,12 +12,26 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	dec3to8
 
-} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/upcount.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/upcount.v
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/mux.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/mux.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module upcount
+-- Compiling module mux
 
 Top level modules:
-	upcount
+	mux
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/dec3to8.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/dec3to8.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module dec3to8
+
+Top level modules:
+	dec3to8
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/hexto7segment.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/hexto7segment.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hexto7segment
+
+Top level modules:
+	hexto7segment
 
 } {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/addsub.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/addsub.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -53,5 +39,87 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	addsub
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/addsub.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/addsub.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module addsub
+
+Top level modules:
+	addsub
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/regn.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/regn.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module regn
+
+Top level modules:
+	regn
+
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/regn.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/regn.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regn
+
+Top level modules:
+	regn
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/upcount.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/upcount.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module upcount
+
+Top level modules:
+	upcount
+
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/upcount.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/upcount.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module upcount
+
+Top level modules:
+	upcount
+
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/processor.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/processor.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module processor
+
+Top level modules:
+	processor
+
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/IRn.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/IRn.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IRn
+
+Top level modules:
+	IRn
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/IRn.v} {1 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/IRn.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IRn
+
+Top level modules:
+	IRn
+
+} {} {}} {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v} {2 {vlog -work work -stats=none {C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module proc
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(171): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(177): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(183): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(189): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(195): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/thiag/Documents/Engenharia de Computacao/4 Semestre/AOC II/LAOC/VerilogProcessor/proc.v(201): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	proc
+
+} {} {}} C:/Users/Aluno/Desktop/VerilogProcessor-master/proc.v {1 {vlog -work work C:/Users/Aluno/Desktop/VerilogProcessor-master/proc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module proc
+
+Top level modules:
+	proc
 
 } {} {}}
