@@ -10,6 +10,7 @@ entity proc is
         Done            : out    vl_logic;
         BusWires        : out    vl_logic_vector(15 downto 0);
         addr            : out    vl_logic_vector(15 downto 0);
-        store           : out    vl_logic
+        store           : out    vl_logic;
+        R7              : out    vl_logic_vector(15 downto 0)
     );
 end proc;

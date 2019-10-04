@@ -1,10 +1,10 @@
-module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
+module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 	input [15:0] DIN;
 	input [15:0] mem;
 	input Resetn, Clock, Run;
 	output reg Done;
 	output reg store;
-	reg save;
+	reg save, EnableI;
 	output wire [15:0] BusWires;
 	output [15:0] addr;
 	wire [9:0] IR;
@@ -14,7 +14,8 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
 	wire [7:0] Xreg, Yreg;
 	wire [1:0] Tstep_Q;
 
-	wire [15:0] R0, R1, R2, R3, R4, R5, R6, R7, A, G, Gout;
+	wire [15:0] R0, R1, R2, R3, R4, R5, R6, A, G, Gout;
+	output wire [15:0] R7;
 	reg [7:0] Rin;
 	reg Ain, Gin, Lin;
 	reg [10:0] Control;
@@ -33,7 +34,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
 	regn mR4(BusWires, Rin[3], Clock, R4);
 	regn mR5(BusWires, Rin[2], Clock, R5);
 	regn mR6(BusWires, Rin[1], Clock, R6);
-	regn mR7(BusWires, Rin[0], Clock, R7);
+	regn7 mR7(BusWires, Rin[0], Clock, R7, Done);
 	regn mG(G, Gin, Clock, Gout);
 	regn mA(BusWires, Ain, Clock, A);
 	regn ADDR(BusWires, Lin, Clock, addr);
@@ -60,6 +61,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
 			Ain = 1'b0;
 			save = 1'b0;
 			Lin = 1'b0;
+			EnableI = 1'b0;
 			case (Tstep_Q)
 				2'b00: // store DIN in IR in time step 0
 				begin
@@ -77,7 +79,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
 						4'b0001: //mvi
 						begin
 							Control= {8'b0, 3'b010}; //mux libera a proxima entrada
-							IRin= 1'b0;	//o proximo valor n  uma instrucao
+							IRin= 1'b0;	//o proximo valor nao e uma instrucao
 						end
 						4'b0010: //add
 						begin
@@ -131,10 +133,8 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store);
 						  begin
 						    Control = {Yreg, 3'b000};
 						    Rin = Xreg;
-						    Done = 1'b1;
-						  else
-						    Done = 1'b1;
 						  end
+						    Done = 1'b1;
 						end
 					endcase
 				end

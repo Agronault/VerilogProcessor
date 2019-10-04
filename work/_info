@@ -18,7 +18,7 @@ Z10 !s100 `g@K1JIjRNNf9N^03:9Q?1
 Z11 I9XjRAPZ<DWo:KbcFkZbF43
 Z12 Vmc?8MMmo=?C9h_bPfd?lY0
 Z13 dC:\Users\Aluno\Desktop\VerilogProcessor
-Z14 w1570115589
+Z14 w1570213658
 Z15 8C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v
 Z16 FC:/Users/Aluno/Desktop/VerilogProcessor/addsub.v
 L0 1
@@ -27,7 +27,7 @@ r1
 31
 Z18 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v|
 Z19 o-work work -O0
-Z20 !s108 1570122835.744000
+Z20 !s108 1570217716.219000
 Z21 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v|
 !i10b 1
 !s85 0
@@ -37,83 +37,84 @@ Z22 !s100 3[63[]gYXTQTa[BP`:JAa3
 Z23 Id8z1I3ef4aN]A_=a>>FoV3
 Z24 V3MQ7SOW6nNK?k^ze_@^7O1
 R13
-Z25 w1570115590
-Z26 8C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
-Z27 FC:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
+R14
+Z25 8C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
+Z26 FC:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
 L0 1
 R17
 r1
 31
-Z28 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
+Z27 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
 R19
-Z29 !s108 1570122835.811000
-Z30 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
+Z28 !s108 1570217716.348000
+Z29 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vhexto7segment
-Z31 !s100 ZehjL=8Rj1i<VcJO^M4RW2
-Z32 IjzQIZC4IEBBRV8FEKY5EW3
-Z33 V[^UnNES5T[RhzG=R[bH3c0
+Z30 !s100 ZehjL=8Rj1i<VcJO^M4RW2
+Z31 IjzQIZC4IEBBRV8FEKY5EW3
+Z32 V[^UnNES5T[RhzG=R[bH3c0
 R13
-R25
-Z34 8C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
-Z35 FC:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
+R14
+Z33 8C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
+Z34 FC:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
 L0 1
 R17
 r1
 31
-Z36 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
 R19
-Z37 !s108 1570122835.900000
-Z38 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
+Z36 !s108 1570217716.488000
+Z37 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vIRn
-Z39 !s100 aBPKW8@H5GdaOA8h;Zz=`1
-Z40 Inann592:Rc=ZESIi54]eT1
-Z41 Vh_NbYAUYnC4GUff<4?OWQ1
+Z38 !s100 dWX`8SA[Hi>NmzSEbN3J<2
+Z39 IEFOJzND[9^OR?WVC:02ie1
+Z40 Vh_NbYAUYnC4GUff<4?OWQ1
 R13
-R25
-Z42 8C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v
-Z43 FC:/Users/Aluno/Desktop/VerilogProcessor/IRn.v
+R14
+Z41 8C:\Users\Aluno\Desktop\VerilogProcessor\IRn.v
+Z42 FC:\Users\Aluno\Desktop\VerilogProcessor\IRn.v
 L0 1
 R17
 r1
 31
-Z44 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v|
+Z43 !s90 -reportprogress|300|-work|work|C:\Users\Aluno\Desktop\VerilogProcessor\IRn.v|
 R19
-Z45 n@i@rn
-Z46 !s108 1570122835.962000
-Z47 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v|
+Z44 n@i@rn
+Z45 !s108 1570217716.618000
+Z46 !s107 C:\Users\Aluno\Desktop\VerilogProcessor\IRn.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux
-Z48 !s100 ?Ul;UGj[IC_AST4DNg68<2
-Z49 ILc1o[X13oIQWP3PcJCCCe0
-Z50 VL7j_h>Z=@CZhB;7c@c>NT0
+Z47 !s100 ?Ul;UGj[IC_AST4DNg68<2
+Z48 ILc1o[X13oIQWP3PcJCCCe0
+Z49 VL7j_h>Z=@CZhB;7c@c>NT0
 R13
-R25
-Z51 8C:/Users/Aluno/Desktop/VerilogProcessor/mux.v
-Z52 FC:/Users/Aluno/Desktop/VerilogProcessor/mux.v
+R14
+Z50 8C:/Users/Aluno/Desktop/VerilogProcessor/mux.v
+Z51 FC:/Users/Aluno/Desktop/VerilogProcessor/mux.v
 L0 1
 R17
 r1
 31
-Z53 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
+Z52 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
 R19
-Z54 !s108 1570122836.035000
-Z55 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
+Z53 !s108 1570217716.771000
+Z54 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vproc
-Z56 IHfOCIZ7Q>U8n4@S4AQ4fG0
-Z57 VERM7@2;[M[aG@T<ddB[Kz1
+Z55 !s100 ]iG96_@^=F=B1=o^[4@9;1
+Z56 IgVXj6Lcm0=>SJijhQLE_I0
+Z57 V7Go?<NzaABcO]8m>61Ljh3
 R13
-Z58 w1570122811
+Z58 w1570217657
 Z59 8C:/Users/Aluno/Desktop/VerilogProcessor/proc.v
 Z60 FC:/Users/Aluno/Desktop/VerilogProcessor/proc.v
 L0 1
@@ -122,66 +123,84 @@ r1
 31
 Z61 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/proc.v|
 R19
-Z62 !s100 bP<HBe?H9h7?aOk8e?ddb2
-Z63 !s108 1570122836.101000
-Z64 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/proc.v|
+Z62 !s108 1570217716.901000
+Z63 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/proc.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vprocessor
-Z65 !s100 l>K7Kc<ZIgDWcXgT5nG0J1
-Z66 IZ^<z<nYk0I<dm`PhE4Y842
-Z67 V6];d?geGCXDRODW;E;0`e3
+Z64 !s100 Z`OdWR]Zh?[KF2@2lJ0S?2
+Z65 I[jEh:LP8Ze@hig5zhk^F63
+Z66 V5j<l>`gDeZd1AL2JZm5[A3
 R13
-Z68 w1570120615
-Z69 8C:/Users/Aluno/Desktop/VerilogProcessor/processor.v
-Z70 FC:/Users/Aluno/Desktop/VerilogProcessor/processor.v
+Z67 w1570217083
+Z68 8C:/Users/Aluno/Desktop/VerilogProcessor/processor.v
+Z69 FC:/Users/Aluno/Desktop/VerilogProcessor/processor.v
 L0 1
 R17
 r1
 31
-Z71 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
+Z70 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
 R19
-Z72 !s108 1570122836.179000
-Z73 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
+Z71 !s108 1570217717.038000
+Z72 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vregn
-Z74 !s100 b]kIiig:P<Df_J3j8^UQo1
-Z75 IT<SEIdZ<NW;S]i7ljGXe]2
-Z76 VUc6I3VM5DDQ[zOJ4a2HfK0
+Z73 !s100 b]kIiig:P<Df_J3j8^UQo1
+Z74 IT<SEIdZ<NW;S]i7ljGXe]2
+Z75 VUc6I3VM5DDQ[zOJ4a2HfK0
 R13
-R25
+Z76 w1570217709
 Z77 8C:/Users/Aluno/Desktop/VerilogProcessor/regn.v
 Z78 FC:/Users/Aluno/Desktop/VerilogProcessor/regn.v
 L0 1
 R17
 r1
 31
-Z79 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
+Z79 !s108 1570217717.166000
+Z80 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
+Z81 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
 R19
 !i10b 1
 !s85 0
-Z80 !s108 1570122836.263000
-Z81 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
+!s101 -O0
+vregn7
+Z82 ID=m7OCINQ4W>z1d<^k7Pa1
+Z83 VPHXLGe_J0hW61:h0Y^8g@2
+R13
+R76
+R77
+R78
+L0 19
+R17
+r1
+31
+R79
+R80
+R81
+R19
+!i10b 1
+Z84 !s100 TckzPL:NJ6G9M8X_dhkd33
+!s85 0
 !s101 -O0
 vupcount
 !i10b 1
-Z82 !s100 aH^7k^GLjR5PT<<mcB]oB3
-Z83 I>P0a;SJ6Je;Cl=UZ=KTfW1
-Z84 V6F[W^nTWj`kicHA9eP>;d3
+Z85 !s100 aH^7k^GLjR5PT<<mcB]oB3
+Z86 I>P0a;SJ6Je;Cl=UZ=KTfW1
+Z87 V6F[W^nTWj`kicHA9eP>;d3
 R13
-R25
-Z85 8C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
-Z86 FC:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
+R14
+Z88 8C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
+Z89 FC:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
 L0 1
 R17
 r1
 !s85 0
 31
-!s108 1570122836.336000
+!s108 1570217717.425000
 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v|
-Z87 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v|
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v|
 !s101 -O0
 R19
