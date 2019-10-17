@@ -80,6 +80,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 						begin
 							Control= {8'b0, 3'b010}; //mux libera a proxima entrada
 							IRin= 1'b0;	//o proximo valor nao e uma instrucao
+							EnableI= 1'b1; //Chama o valor em R7
 						end
 						4'b0010: //add
 						begin

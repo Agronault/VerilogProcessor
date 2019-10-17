@@ -34,7 +34,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 	regn mR4(BusWires, Rin[3], Clock, R4);
 	regn mR5(BusWires, Rin[2], Clock, R5);
 	regn mR6(BusWires, Rin[1], Clock, R6);
-	regn7 mR7(BusWires, Rin[0], Clock, R7, Done);
+	regn7 mR7(BusWires, Rin[0], Clock, R7, Done, EnableI);
 	regn mG(G, Gin, Clock, Gout);
 	regn mA(BusWires, Ain, Clock, A);
 	regn ADDR(BusWires, Lin, Clock, addr);
@@ -80,6 +80,7 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 						begin
 							Control= {8'b0, 3'b010}; //mux libera a proxima entrada
 							IRin= 1'b0;	//o proximo valor nao e uma instrucao
+							EnableI= 1'b1; //Chama o valor em R7
 						end
 						4'b0010: //add
 						begin
@@ -146,7 +147,6 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 					end
 					4'b0001: //mvi
 					begin
-					  EnableI= 1'b1;
 						Rin = Xreg; //X ativa a escrita
 						Done = 1'b1; //finalizado
 					end
