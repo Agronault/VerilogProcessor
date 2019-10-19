@@ -33,7 +33,7 @@ module regn7(R, Rin, Clock, Q, Done, EnableI);
 		if (Rin)
 			Q <= R;
 			
-	always @ (posedge Done | posedge EnableI)
+	always @ (posedge Done or posedge EnableI)
 	   Q = Q + 1;
 endmodule
 

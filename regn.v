@@ -7,12 +7,12 @@ module regn(R, Rin, Clock, Q);
 	
 	initial
 	begin
-		Q <= 16'b0000000000000000;
+		Q <= 16'b0000000000000000;//inicia em 0
 	end
 	
 	always @(posedge Clock)
 		if (Rin)
-			Q <= R;
+			Q <= R;//escrita
 endmodule
 
 
@@ -26,12 +26,12 @@ module regn7(R, Rin, Clock, Q, Done, EnableI);
 	
 	initial
 	begin
-		Q <= 16'b0000000000000000;
+		Q <= 16'b0000000000000000;//inicia em 0
 	end
 	
 	always @(posedge Clock)
 		if (Rin)
-			Q <= R;
+			Q <= R;//escrita
 			
 	always @ (posedge Done or posedge EnableI)
 	   Q = Q + 1;

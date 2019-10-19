@@ -7,5 +7,5 @@ module IRn(R, Rin, Clock, Q);
 	
 	always @(posedge Clock)
 		if (Rin)
-			Q <= R;
+			Q <= R;//escrita nova memória
 endmodule

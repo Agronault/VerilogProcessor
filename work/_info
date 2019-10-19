@@ -1,206 +1,217 @@
 m255
 K3
+z0
 13
 cModel Technology
-Z0 dC:\altera\13.0sp1
-T_opt1
-Z1 V>V2TemhzGBlaG@ePkEA_X2
-Z2 04 9 4 work processor fast 0
-Z3 =1-e0d55ef48eaa-5d912ce0-28e-1d74
-Z4 o-quiet -auto_acc_if_foreign -work work
-Z5 tCvgOpt 0
-Z6 n@_opt1
-Z7 OL;O;10.5;63
-Z8 dC:\altera\13.0sp1
-Z9 !s110 1569795296
+dC:\altera\13.0sp1
 vaddsub
-Z10 !s100 `g@K1JIjRNNf9N^03:9Q?1
-Z11 I9XjRAPZ<DWo:KbcFkZbF43
-Z12 Vmc?8MMmo=?C9h_bPfd?lY0
-Z13 dC:\Users\Aluno\Desktop\VerilogProcessor
-Z14 w1571315031
-Z15 8C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v
-Z16 FC:/Users/Aluno/Desktop/VerilogProcessor/addsub.v
-L0 1
-Z17 OV;L;10.1d;51
-r1
-31
-Z18 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v|
-Z19 o-work work -O0
-Z20 !s108 1571318510.549000
-Z21 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/addsub.v|
+Z0 !s110 1571450489
 !i10b 1
+!s100 ?^M_UK9>AHW_3hm30D=Im3
+IQ0MOLgOLh]N0CHk;=eV_F0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/xande/Documents/GitHub/VerilogProcessor
+w1571450373
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/addsub.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/addsub.v
+L0 1
+Z3 OL;L;10.5;63
+r1
 !s85 0
-!s101 -O0
+31
+Z4 !s108 1571450489.000000
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/addsub.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/addsub.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
 vdec3to8
-Z22 !s100 3[63[]gYXTQTa[BP`:JAa3
-Z23 Id8z1I3ef4aN]A_=a>>FoV3
-Z24 V3MQ7SOW6nNK?k^ze_@^7O1
-R13
-R14
-Z25 8C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
-Z26 FC:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v
-L0 1
-R17
-r1
-31
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
-R19
-Z28 !s108 1571318511.299000
-Z29 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/dec3to8.v|
+R0
 !i10b 1
+!s100 IWGo]4Z6cG1^P4D=XZMM?0
+IBjaEdFkdba1gz<GW>ZGWR3
+R1
+R2
+Z7 w1571448552
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/dec3to8.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/dec3to8.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/dec3to8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/dec3to8.v|
+!i113 0
+R5
+R6
 vhexto7segment
-Z30 !s100 ZehjL=8Rj1i<VcJO^M4RW2
-Z31 IjzQIZC4IEBBRV8FEKY5EW3
-Z32 V[^UnNES5T[RhzG=R[bH3c0
-R13
-R14
-Z33 8C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
-Z34 FC:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v
-L0 1
-R17
-r1
-31
-Z35 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
-R19
-Z36 !s108 1571318511.736000
-Z37 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/hexto7segment.v|
+R0
 !i10b 1
+!s100 DW5a3M0iOD]nU;DRnVNnn0
+IL4nRe9XIV[<4GQZ<_VkN<1
+R1
+R2
+R7
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/hexto7segment.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/hexto7segment.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/hexto7segment.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/hexto7segment.v|
+!i113 0
+R5
+R6
 vIRn
-Z38 !s100 aBPKW8@H5GdaOA8h;Zz=`1
-Z39 Inann592:Rc=ZESIi54]eT1
-Z40 Vh_NbYAUYnC4GUff<4?OWQ1
-R13
-R14
-Z41 8C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v
-Z42 FC:/Users/Aluno/Desktop/VerilogProcessor/IRn.v
-L0 1
-R17
-r1
-31
-Z43 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v|
-R19
-Z44 n@i@rn
-Z45 !s108 1571318512.408000
-Z46 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/IRn.v|
+R0
 !i10b 1
+!s100 mgY2AQHk4aOiM[?EzW4Bl3
+I<Hd]1aA;XhQ;^lNR4ooWa1
+R1
+R2
+w1571450479
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/IRn.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/IRn.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/IRn.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/IRn.v|
+!i113 0
+R5
+R6
+n@i@rn
 vmux
-Z47 !s100 ?Ul;UGj[IC_AST4DNg68<2
-Z48 ILc1o[X13oIQWP3PcJCCCe0
-Z49 VL7j_h>Z=@CZhB;7c@c>NT0
-R13
-R14
-Z50 8C:/Users/Aluno/Desktop/VerilogProcessor/mux.v
-Z51 FC:/Users/Aluno/Desktop/VerilogProcessor/mux.v
-L0 1
-R17
-r1
-31
-Z52 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
-R19
-Z53 !s108 1571318513.205000
-Z54 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/mux.v|
+R0
 !i10b 1
+!s100 [aQnJW^MK3lM:EOH=Kc382
+IR:IhbE?H0MIE84RbjjXZ83
+R1
+R2
+R7
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/mux.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/mux.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/mux.v|
+!i113 0
+R5
+R6
 vproc
-Z55 I19C`UGgTI@^BmbojBj;G[1
-Z56 V7Go?<NzaABcO]8m>61Ljh3
-R13
-Z57 w1571318408
-Z58 8C:/Users/Aluno/Desktop/VerilogProcessor/proc.v
-Z59 FC:/Users/Aluno/Desktop/VerilogProcessor/proc.v
-L0 1
-R17
-r1
-31
-Z60 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/proc.v|
-R19
-Z61 !s100 N3<LiMblFBWE9XVLejnNV0
-Z62 !s108 1571318513.471000
-Z63 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/proc.v|
+R0
 !i10b 1
+!s100 9PQ=n[8@6b^kbBQ_S0=De0
+I;:?7_>>lT]GnQ4k5^OZQ03
+R1
+R2
+w1571450462
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/proc.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/proc.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/proc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/proc.v|
+!i113 0
+R5
+R6
 vprocessor
-Z64 !s100 LMQYjJFz:VDfUS7noCP]A1
-Z65 I?YLfHNZi<QeN>;V7NHU1T0
-Z66 V5j<l>`gDeZd1AL2JZm5[A3
-R13
-Z67 w1571317450
-Z68 8C:/Users/Aluno/Desktop/VerilogProcessor/processor.v
-Z69 FC:/Users/Aluno/Desktop/VerilogProcessor/processor.v
-L0 1
-R17
-r1
-31
-Z70 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
-R19
-Z71 !s108 1571318513.830000
-Z72 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/processor.v|
+R0
 !i10b 1
+!s100 9[GGTS@1UV]z2]4:aMVYf2
+IK_YJB6gC=T<9D[og=[0`E1
+R1
+R2
+w1571450214
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/processor.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/processor.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/processor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/processor.v|
+!i113 0
+R5
+R6
 vregn
-Z73 !s100 b]kIiig:P<Df_J3j8^UQo1
-Z74 IT<SEIdZ<NW;S]i7ljGXe]2
-Z75 VUc6I3VM5DDQ[zOJ4a2HfK0
-R13
-R14
-Z76 8C:/Users/Aluno/Desktop/VerilogProcessor/regn.v
-Z77 FC:/Users/Aluno/Desktop/VerilogProcessor/regn.v
-L0 1
-R17
-r1
-31
-Z78 !s108 1571318514.221000
-Z79 !s107 C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
-Z80 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/regn.v|
-R19
+R0
 !i10b 1
+!s100 _[7ZKR>@KHK`_?E;NBO=;3
+ISGoD]JOLGhU>WV4hYRR0L0
+R1
+R2
+Z8 w1571450304
+Z9 8C:/Users/xande/Documents/GitHub/VerilogProcessor/regn.v
+Z10 FC:/Users/xande/Documents/GitHub/VerilogProcessor/regn.v
+L0 1
+R3
+r1
 !s85 0
-!s101 -O0
+31
+R4
+Z11 !s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/regn.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/regn.v|
+!i113 0
+R5
+R6
 vregn7
-Z81 !s100 TckzPL:NJ6G9M8X_dhkd33
-Z82 ID=m7OCINQ4W>z1d<^k7Pa1
-Z83 VPHXLGe_J0hW61:h0Y^8g@2
-R13
-R14
-R76
-R77
+R0
+!i10b 1
+!s100 U]SMUJUde5gNm0;DkV]Nz2
+IIZ?`L4dIDDb_CZSHd^i2n2
+R1
+R2
+R8
+R9
+R10
 L0 19
-R17
+R3
 r1
-31
-R78
-R79
-R80
-R19
-!i10b 1
 !s85 0
-!s101 -O0
+31
+R4
+R11
+R12
+!i113 0
+R5
+R6
 vupcount
+R0
 !i10b 1
-Z84 !s100 aH^7k^GLjR5PT<<mcB]oB3
-Z85 I>P0a;SJ6Je;Cl=UZ=KTfW1
-Z86 V6F[W^nTWj`kicHA9eP>;d3
-R13
-R14
-Z87 8C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
-Z88 FC:/Users/Aluno/Desktop/VerilogProcessor/upcount.v
+!s100 a0YR6giRMC5F<KedFzR9>2
+Iaf3FXBTH:UG9lV1UN>8nK1
+R1
+R2
+R7
+8C:/Users/xande/Documents/GitHub/VerilogProcessor/upcount.v
+FC:/Users/xande/Documents/GitHub/VerilogProcessor/upcount.v
 L0 1
-R17
+R3
 r1
 !s85 0
 31
-!s108 1571318514.736000
-!s107 C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v|
-Z89 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/VerilogProcessor/upcount.v|
-!s101 -O0
-R19
+R4
+!s107 C:/Users/xande/Documents/GitHub/VerilogProcessor/upcount.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/xande/Documents/GitHub/VerilogProcessor/upcount.v|
+!i113 0
+R5
+R6

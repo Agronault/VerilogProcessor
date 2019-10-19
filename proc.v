@@ -24,9 +24,10 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 	begin
 		Done = 1'b0;
 	end
-	
-	addsub ula(ControlULA, A, BusWires, G);
 
+	//registradores___________________	
+	addsub ula(ControlULA, A, BusWires, G);
+	
 	regn mR0(BusWires, Rin[7], Clock, R0);
 	regn mR1(BusWires, Rin[6], Clock, R1);
 	regn mR2(BusWires, Rin[5], Clock, R2);
@@ -35,14 +36,16 @@ module proc (mem, DIN, Resetn, Clock, Run, Done, BusWires, addr, store, R7);
 	regn mR5(BusWires, Rin[2], Clock, R5);
 	regn mR6(BusWires, Rin[1], Clock, R6);
 	regn7 mR7(BusWires, Rin[0], Clock, R7, Done, EnableI);
+
 	regn mG(G, Gin, Clock, Gout);
 	regn mA(BusWires, Ain, Clock, A);
 	regn ADDR(BusWires, Lin, Clock, addr);
+	//registradores_________________
 
 	IRn mIR(DIN[9:0], IRin, Clock, IR); // Each instruction can be encoded and stored in the IR
 
 	mux Multiplexers(Control, mem, DIN, R0, R1, R2, R3, R4, R5, R6, R7 , Gout, BusWires);
-
+	//multiplexador
 	wire Clear = ~Resetn | Done;
 	upcount Tstep (Clear, Clock, Tstep_Q);
 	assign I = IR[3:0];
